@@ -131,8 +131,6 @@ const haikuData =
         console.log(haiku)
     }
 
-    getHaiku()
-
 
     const args = {firstLines, secondLines, thirdLines}  
 
@@ -150,7 +148,7 @@ const haikuData =
         return haiku
     }
 
-
+    const loadEvent = document.addEventListener('load', getHaiku)
     const haikuEvent = haikuButton.addEventListener('click', getHaiku)
     const printRandomHaikuEvent = printRandomHaikuButton.addEventListener('click', printRandomHaiku) 
 
