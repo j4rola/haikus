@@ -142,13 +142,13 @@ const haikuData =
 
     const printRandomHaiku = () => {
         const haiku = getRandomHaiku(args) 
-        rline1.innerHTML = haiku.line1
+        rline1.innerHTML = haiku.line1   
         rline2.innerHTML = haiku.line2
         rline3.innerHTML = haiku.line3
         return haiku
     }
 
-    const loadEvent = document.addEventListener('load', (e) => { getHaiku })
+    const loadEvent = window.addEventListener('load', getHaiku)
     const haikuEvent = haikuButton.addEventListener('click', getHaiku)
     const printRandomHaikuEvent = printRandomHaikuButton.addEventListener('click', printRandomHaiku) 
 
