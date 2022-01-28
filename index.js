@@ -148,7 +148,7 @@ const haikuData =
         return haiku
     }
 
-    const loadEvent = document.addEventListener('load', getHaiku)
+    const loadEvent = document.addEventListener('load', (e) => { getHaiku })
     const haikuEvent = haikuButton.addEventListener('click', getHaiku)
     const printRandomHaikuEvent = printRandomHaikuButton.addEventListener('click', printRandomHaiku) 
 
