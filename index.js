@@ -148,8 +148,8 @@ const haikuData =
         return haiku
     }
 
-    const loadEvent = window.addEventListener('load', getHaiku)
-    const haikuEvent = haikuButton.addEventListener('click', getHaiku)
+    const loadEvent = window.addEventListener('load', getHaiku)  
+    const haikuEvent = haikuButton.addEventListener('click', getHaiku)  
     const printRandomHaikuEvent = printRandomHaikuButton.addEventListener('click', printRandomHaiku) 
 
  
